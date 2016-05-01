@@ -1,0 +1,291 @@
+fileFormatVersion: 2
+guid: bcd002baa05c9d54eb785e5307f9e7c1
+timeCreated: 1459667686
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: arm_l
+    100002: arm_r
+    100004: Armature
+    100006: body
+    100008: daruman
+    100010: //RootNode
+    100012: daruman_MeshPart0
+    100014: daruman_MeshPart1
+    100016: foot_l
+    100018: foot_r
+    100020: hand_l
+    100022: hand_r
+    100024: head
+    100026: leg_l
+    100028: leg_r
+    100030: master
+    100032: tail
+    400000: arm_l
+    400002: arm_r
+    400004: Armature
+    400006: body
+    400008: //RootNode
+    400010: daruman
+    400012: daruman_MeshPart0
+    400014: daruman_MeshPart1
+    400016: foot_l
+    400018: foot_r
+    400020: hand_l
+    400022: hand_r
+    400024: head
+    400026: leg_l
+    400028: leg_r
+    400030: master
+    400032: tail
+    4300000: daruman_MeshPart0
+    4300002: daruman_MeshPart1
+    7400000: Default Take
+    7400002: idol
+    7400004: walk
+    9500000: //RootNode
+    13700000: daruman_MeshPart0
+    13700002: daruman_MeshPart1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 79
+      lastFrame: 140
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/master
+        weight: 1
+      - path: Armature/master/body
+        weight: 1
+      - path: Armature/master/body/arm_l
+        weight: 1
+      - path: Armature/master/body/arm_l/hand_l
+        weight: 1
+      - path: Armature/master/body/arm_r
+        weight: 1
+      - path: Armature/master/body/arm_r/hand_r
+        weight: 1
+      - path: Armature/master/body/head
+        weight: 1
+      - path: Armature/master/leg_l
+        weight: 1
+      - path: Armature/master/leg_l/foot_l
+        weight: 1
+      - path: Armature/master/leg_r
+        weight: 1
+      - path: Armature/master/leg_r/foot_r
+        weight: 1
+      - path: Armature/master/tail
+        weight: 1
+      - path: daruman
+        weight: 1
+      - path: daruman/daruman_MeshPart0
+        weight: 1
+      - path: daruman/daruman_MeshPart1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: idol
+      takeName: idol
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/master
+        weight: 1
+      - path: Armature/master/body
+        weight: 1
+      - path: Armature/master/body/arm_l
+        weight: 1
+      - path: Armature/master/body/arm_l/hand_l
+        weight: 1
+      - path: Armature/master/body/arm_r
+        weight: 1
+      - path: Armature/master/body/arm_r/hand_r
+        weight: 1
+      - path: Armature/master/body/head
+        weight: 1
+      - path: Armature/master/leg_l
+        weight: 1
+      - path: Armature/master/leg_l/foot_l
+        weight: 1
+      - path: Armature/master/leg_r
+        weight: 1
+      - path: Armature/master/leg_r/foot_r
+        weight: 1
+      - path: Armature/master/tail
+        weight: 1
+      - path: daruman
+        weight: 1
+      - path: daruman/daruman_MeshPart0
+        weight: 1
+      - path: daruman/daruman_MeshPart1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: walk
+      takeName: walk
+      firstFrame: 80
+      lastFrame: 140
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/master
+        weight: 1
+      - path: Armature/master/body
+        weight: 1
+      - path: Armature/master/body/arm_l
+        weight: 1
+      - path: Armature/master/body/arm_l/hand_l
+        weight: 1
+      - path: Armature/master/body/arm_r
+        weight: 1
+      - path: Armature/master/body/arm_r/hand_r
+        weight: 1
+      - path: Armature/master/body/head
+        weight: 1
+      - path: Armature/master/leg_l
+        weight: 1
+      - path: Armature/master/leg_l/foot_l
+        weight: 1
+      - path: Armature/master/leg_r
+        weight: 1
+      - path: Armature/master/leg_r/foot_r
+        weight: 1
+      - path: Armature/master/tail
+        weight: 1
+      - path: daruman
+        weight: 1
+      - path: daruman/daruman_MeshPart0
+        weight: 1
+      - path: daruman/daruman_MeshPart1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

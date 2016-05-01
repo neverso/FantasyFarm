@@ -1,0 +1,412 @@
+fileFormatVersion: 2
+guid: ea8df4d441c9d584eae953306b6daf1c
+timeCreated: 1459590357
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: arm_l
+    100002: arm_l_body
+    100004: arm_l_shoulder
+    100006: arm_r
+    100008: arm_r_body
+    100010: arm_r_shouledr
+    100012: Armature
+    100014: body
+    100016: cray_slug
+    100018: cray_slug_MeshPart0
+    100020: cray_slug_MeshPart1
+    100022: cray_slug_MeshPart2
+    100024: //RootNode
+    100026: eye_body
+    100028: eye_l
+    100030: eye_l_body
+    100032: eye_r
+    100034: eye_r_body
+    100036: foot_behind_l_1
+    100038: foot_behind_l_2
+    100040: foot_behind_l_3
+    100042: foot_behind_r_1
+    100044: foot_behind_r_2
+    100046: foot_behind_r_3
+    100048: foot_l_1
+    100050: foot_l_2
+    100052: foot_l_3
+    100054: foot_r_1
+    100056: foot_r_2
+    100058: foot_r_3
+    100060: hand_l
+    100062: hand_r
+    100064: head
+    100066: head_body
+    100068: leg_behind_l
+    100070: leg_behind_r
+    100072: leg_l
+    100074: leg_r
+    100076: master
+    100078: sense_l
+    100080: sense_l_body1
+    100082: sense_l_body2
+    100084: sense_l_body3
+    100086: sense_r
+    100088: sense_r_body1
+    100090: sense_r_body2
+    100092: sense_r_body3
+    400000: arm_l
+    400002: arm_l_body
+    400004: arm_l_shoulder
+    400006: arm_r
+    400008: arm_r_body
+    400010: arm_r_shouledr
+    400012: Armature
+    400014: body
+    400016: cray_slug
+    400018: cray_slug_MeshPart0
+    400020: cray_slug_MeshPart1
+    400022: cray_slug_MeshPart2
+    400024: //RootNode
+    400026: eye_body
+    400028: eye_l
+    400030: eye_l_body
+    400032: eye_r
+    400034: eye_r_body
+    400036: foot_behind_l_1
+    400038: foot_behind_l_2
+    400040: foot_behind_l_3
+    400042: foot_behind_r_1
+    400044: foot_behind_r_2
+    400046: foot_behind_r_3
+    400048: foot_l_1
+    400050: foot_l_2
+    400052: foot_l_3
+    400054: foot_r_1
+    400056: foot_r_2
+    400058: foot_r_3
+    400060: hand_l
+    400062: hand_r
+    400064: head
+    400066: head_body
+    400068: leg_behind_l
+    400070: leg_behind_r
+    400072: leg_l
+    400074: leg_r
+    400076: master
+    400078: sense_l
+    400080: sense_l_body1
+    400082: sense_l_body2
+    400084: sense_l_body3
+    400086: sense_r
+    400088: sense_r_body1
+    400090: sense_r_body2
+    400092: sense_r_body3
+    4300000: cray_slug_MeshPart0
+    4300002: cray_slug_MeshPart1
+    4300004: cray_slug_MeshPart2
+    7400000: Default Take
+    7400002: idol_roop_
+    9500000: //RootNode
+    13700000: cray_slug_MeshPart0
+    13700002: cray_slug_MeshPart1
+    13700004: cray_slug_MeshPart2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 79
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 5
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/master
+        weight: 1
+      - path: Armature/master/body
+        weight: 1
+      - path: Armature/master/body/head_body
+        weight: 1
+      - path: Armature/master/body/head_body/head
+        weight: 1
+      - path: Armature/master/body/head_body/head/arm_l
+        weight: 1
+      - path: Armature/master/body/head_body/head/arm_l/arm_l_shoulder
+        weight: 1
+      - path: Armature/master/body/head_body/head/arm_l/arm_l_shoulder/arm_l_body
+        weight: 1
+      - path: Armature/master/body/head_body/head/arm_l/arm_l_shoulder/arm_l_body/hand_l
+        weight: 1
+      - path: Armature/master/body/head_body/head/arm_r
+        weight: 1
+      - path: Armature/master/body/head_body/head/arm_r/arm_r_shouledr
+        weight: 1
+      - path: Armature/master/body/head_body/head/arm_r/arm_r_shouledr/arm_r_body
+        weight: 1
+      - path: Armature/master/body/head_body/head/arm_r/arm_r_shouledr/arm_r_body/hand_r
+        weight: 1
+      - path: Armature/master/body/head_body/head/eye_body
+        weight: 1
+      - path: Armature/master/body/head_body/head/eye_body/eye_l_body
+        weight: 1
+      - path: Armature/master/body/head_body/head/eye_body/eye_l_body/eye_l
+        weight: 1
+      - path: Armature/master/body/head_body/head/eye_body/eye_r_body
+        weight: 1
+      - path: Armature/master/body/head_body/head/eye_body/eye_r_body/eye_r
+        weight: 1
+      - path: Armature/master/body/head_body/head/sense_l_body1
+        weight: 1
+      - path: Armature/master/body/head_body/head/sense_l_body1/sense_l_body2
+        weight: 1
+      - path: Armature/master/body/head_body/head/sense_l_body1/sense_l_body2/sense_l_body3
+        weight: 1
+      - path: Armature/master/body/head_body/head/sense_l_body1/sense_l_body2/sense_l_body3/sense_l
+        weight: 1
+      - path: Armature/master/body/head_body/head/sense_r_body1
+        weight: 1
+      - path: Armature/master/body/head_body/head/sense_r_body1/sense_r_body2
+        weight: 1
+      - path: Armature/master/body/head_body/head/sense_r_body1/sense_r_body2/sense_r_body3
+        weight: 1
+      - path: Armature/master/body/head_body/head/sense_r_body1/sense_r_body2/sense_r_body3/sense_r
+        weight: 1
+      - path: Armature/master/body/head_body/leg_l
+        weight: 1
+      - path: Armature/master/body/head_body/leg_l/foot_l_1
+        weight: 1
+      - path: Armature/master/body/head_body/leg_l/foot_l_1/foot_l_2
+        weight: 1
+      - path: Armature/master/body/head_body/leg_l/foot_l_1/foot_l_2/foot_l_3
+        weight: 1
+      - path: Armature/master/body/head_body/leg_r
+        weight: 1
+      - path: Armature/master/body/head_body/leg_r/foot_r_1
+        weight: 1
+      - path: Armature/master/body/head_body/leg_r/foot_r_1/foot_r_2
+        weight: 1
+      - path: Armature/master/body/head_body/leg_r/foot_r_1/foot_r_2/foot_r_3
+        weight: 1
+      - path: Armature/master/leg_behind_l
+        weight: 1
+      - path: Armature/master/leg_behind_l/foot_behind_l_1
+        weight: 1
+      - path: Armature/master/leg_behind_l/foot_behind_l_1/foot_behind_l_2
+        weight: 1
+      - path: Armature/master/leg_behind_l/foot_behind_l_1/foot_behind_l_2/foot_behind_l_3
+        weight: 1
+      - path: Armature/master/leg_behind_r
+        weight: 1
+      - path: Armature/master/leg_behind_r/foot_behind_r_1
+        weight: 1
+      - path: Armature/master/leg_behind_r/foot_behind_r_1/foot_behind_r_2
+        weight: 1
+      - path: Armature/master/leg_behind_r/foot_behind_r_1/foot_behind_r_2/foot_behind_r_3
+        weight: 1
+      - path: cray_slug
+        weight: 1
+      - path: cray_slug/cray_slug_MeshPart0
+        weight: 1
+      - path: cray_slug/cray_slug_MeshPart1
+        weight: 1
+      - path: cray_slug/cray_slug_MeshPart2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: idol_roop_
+      takeName: idol_roop_
+      firstFrame: 0
+      lastFrame: 79
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/master
+        weight: 1
+      - path: Armature/master/body
+        weight: 1
+      - path: Armature/master/body/head_body
+        weight: 1
+      - path: Armature/master/body/head_body/head
+        weight: 1
+      - path: Armature/master/body/head_body/head/arm_l
+        weight: 1
+      - path: Armature/master/body/head_body/head/arm_l/arm_l_shoulder
+        weight: 1
+      - path: Armature/master/body/head_body/head/arm_l/arm_l_shoulder/arm_l_body
+        weight: 1
+      - path: Armature/master/body/head_body/head/arm_l/arm_l_shoulder/arm_l_body/hand_l
+        weight: 1
+      - path: Armature/master/body/head_body/head/arm_r
+        weight: 1
+      - path: Armature/master/body/head_body/head/arm_r/arm_r_shouledr
+        weight: 1
+      - path: Armature/master/body/head_body/head/arm_r/arm_r_shouledr/arm_r_body
+        weight: 1
+      - path: Armature/master/body/head_body/head/arm_r/arm_r_shouledr/arm_r_body/hand_r
+        weight: 1
+      - path: Armature/master/body/head_body/head/eye_body
+        weight: 1
+      - path: Armature/master/body/head_body/head/eye_body/eye_l_body
+        weight: 1
+      - path: Armature/master/body/head_body/head/eye_body/eye_l_body/eye_l
+        weight: 1
+      - path: Armature/master/body/head_body/head/eye_body/eye_r_body
+        weight: 1
+      - path: Armature/master/body/head_body/head/eye_body/eye_r_body/eye_r
+        weight: 1
+      - path: Armature/master/body/head_body/head/sense_l_body1
+        weight: 1
+      - path: Armature/master/body/head_body/head/sense_l_body1/sense_l_body2
+        weight: 1
+      - path: Armature/master/body/head_body/head/sense_l_body1/sense_l_body2/sense_l_body3
+        weight: 1
+      - path: Armature/master/body/head_body/head/sense_l_body1/sense_l_body2/sense_l_body3/sense_l
+        weight: 1
+      - path: Armature/master/body/head_body/head/sense_r_body1
+        weight: 1
+      - path: Armature/master/body/head_body/head/sense_r_body1/sense_r_body2
+        weight: 1
+      - path: Armature/master/body/head_body/head/sense_r_body1/sense_r_body2/sense_r_body3
+        weight: 1
+      - path: Armature/master/body/head_body/head/sense_r_body1/sense_r_body2/sense_r_body3/sense_r
+        weight: 1
+      - path: Armature/master/body/head_body/leg_l
+        weight: 1
+      - path: Armature/master/body/head_body/leg_l/foot_l_1
+        weight: 1
+      - path: Armature/master/body/head_body/leg_l/foot_l_1/foot_l_2
+        weight: 1
+      - path: Armature/master/body/head_body/leg_l/foot_l_1/foot_l_2/foot_l_3
+        weight: 1
+      - path: Armature/master/body/head_body/leg_r
+        weight: 1
+      - path: Armature/master/body/head_body/leg_r/foot_r_1
+        weight: 1
+      - path: Armature/master/body/head_body/leg_r/foot_r_1/foot_r_2
+        weight: 1
+      - path: Armature/master/body/head_body/leg_r/foot_r_1/foot_r_2/foot_r_3
+        weight: 1
+      - path: Armature/master/leg_behind_l
+        weight: 1
+      - path: Armature/master/leg_behind_l/foot_behind_l_1
+        weight: 1
+      - path: Armature/master/leg_behind_l/foot_behind_l_1/foot_behind_l_2
+        weight: 1
+      - path: Armature/master/leg_behind_l/foot_behind_l_1/foot_behind_l_2/foot_behind_l_3
+        weight: 1
+      - path: Armature/master/leg_behind_r
+        weight: 1
+      - path: Armature/master/leg_behind_r/foot_behind_r_1
+        weight: 1
+      - path: Armature/master/leg_behind_r/foot_behind_r_1/foot_behind_r_2
+        weight: 1
+      - path: Armature/master/leg_behind_r/foot_behind_r_1/foot_behind_r_2/foot_behind_r_3
+        weight: 1
+      - path: cray_slug
+        weight: 1
+      - path: cray_slug/cray_slug_MeshPart0
+        weight: 1
+      - path: cray_slug/cray_slug_MeshPart1
+        weight: 1
+      - path: cray_slug/cray_slug_MeshPart2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

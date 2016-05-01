@@ -1,0 +1,256 @@
+fileFormatVersion: 2
+guid: d8f50f4b36173ae478d814c283bb11c7
+timeCreated: 1460803308
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: arm2_l
+    100002: arm2_r
+    100004: arm_l
+    100006: arm_r
+    100008: Armature
+    100010: body
+    100012: foot_l
+    100014: foot_r
+    100016: //RootNode
+    100018: goalem
+    100020: goalem_MeshPart0
+    100022: goalem_MeshPart1
+    100024: hand_l
+    100026: hand_r
+    100028: head
+    100030: leg2_l
+    100032: leg2_r
+    100034: leg_l
+    100036: leg_r
+    100038: master
+    100040: goalem_MeshPart2
+    400000: arm2_l
+    400002: arm2_r
+    400004: arm_l
+    400006: arm_r
+    400008: Armature
+    400010: body
+    400012: foot_l
+    400014: foot_r
+    400016: //RootNode
+    400018: goalem
+    400020: goalem_MeshPart0
+    400022: goalem_MeshPart1
+    400024: hand_l
+    400026: hand_r
+    400028: head
+    400030: leg2_l
+    400032: leg2_r
+    400034: leg_l
+    400036: leg_r
+    400038: master
+    400040: goalem_MeshPart2
+    4300000: goalem_MeshPart0
+    4300002: goalem_MeshPart1
+    4300004: goalem_MeshPart2
+    7400000: Default Take
+    7400002: walk_001
+    9500000: //RootNode
+    13700000: goalem_MeshPart0
+    13700002: goalem_MeshPart1
+    13700004: goalem_MeshPart2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/master
+        weight: 1
+      - path: Armature/master/body
+        weight: 1
+      - path: Armature/master/body/arm_l
+        weight: 1
+      - path: Armature/master/body/arm_l/arm2_l
+        weight: 1
+      - path: Armature/master/body/arm_l/arm2_l/hand_l
+        weight: 1
+      - path: Armature/master/body/arm_r
+        weight: 1
+      - path: Armature/master/body/arm_r/arm2_r
+        weight: 1
+      - path: Armature/master/body/arm_r/arm2_r/hand_r
+        weight: 1
+      - path: Armature/master/body/head
+        weight: 1
+      - path: Armature/master/leg_l
+        weight: 1
+      - path: Armature/master/leg_l/leg2_l
+        weight: 1
+      - path: Armature/master/leg_l/leg2_l/foot_l
+        weight: 1
+      - path: Armature/master/leg_r
+        weight: 1
+      - path: Armature/master/leg_r/leg2_r
+        weight: 1
+      - path: Armature/master/leg_r/leg2_r/foot_r
+        weight: 1
+      - path: goalem
+        weight: 1
+      - path: goalem/goalem_MeshPart0
+        weight: 1
+      - path: goalem/goalem_MeshPart1
+        weight: 1
+      - path: goalem/goalem_MeshPart2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: walk_001
+      takeName: walk_001
+      firstFrame: -1
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/master
+        weight: 1
+      - path: Armature/master/body
+        weight: 1
+      - path: Armature/master/body/arm_l
+        weight: 1
+      - path: Armature/master/body/arm_l/arm2_l
+        weight: 1
+      - path: Armature/master/body/arm_l/arm2_l/hand_l
+        weight: 1
+      - path: Armature/master/body/arm_r
+        weight: 1
+      - path: Armature/master/body/arm_r/arm2_r
+        weight: 1
+      - path: Armature/master/body/arm_r/arm2_r/hand_r
+        weight: 1
+      - path: Armature/master/body/head
+        weight: 1
+      - path: Armature/master/leg_l
+        weight: 1
+      - path: Armature/master/leg_l/leg2_l
+        weight: 1
+      - path: Armature/master/leg_l/leg2_l/foot_l
+        weight: 1
+      - path: Armature/master/leg_r
+        weight: 1
+      - path: Armature/master/leg_r/leg2_r
+        weight: 1
+      - path: Armature/master/leg_r/leg2_r/foot_r
+        weight: 1
+      - path: goalem
+        weight: 1
+      - path: goalem/goalem_MeshPart0
+        weight: 1
+      - path: goalem/goalem_MeshPart1
+        weight: 1
+      - path: goalem/goalem_MeshPart2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 1
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

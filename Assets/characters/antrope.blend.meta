@@ -1,0 +1,570 @@
+fileFormatVersion: 2
+guid: 059900cdb44839148965afad8f5762e9
+timeCreated: 1459606622
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: antrope
+    100004: arb_l2
+    100006: arm_l
+    100008: arm_r
+    100010: arm_r2
+    100012: Armature
+    100014: body
+    100016: bust
+    100018: foot_l_behind1
+    100020: foot_l_behind2
+    100022: foot_l_behind3
+    100024: foot_l_front1
+    100026: foot_l_front2
+    100028: foot_r_behind1
+    100030: foot_r_behind2
+    100032: foot_r_behind3
+    100034: foot_r_front1
+    100036: foot_r_front2
+    100038: hand_l
+    100040: hand_l2
+    100042: hand_r2
+    100044: head
+    100046: hnd_r
+    100048: leg_l_behind
+    100050: leg_l_front
+    100052: leg_r_behind
+    100054: leg_r_front
+    100056: mater
+    100058: mouth_l1
+    100060: mouth_l2
+    100062: mouth_l3
+    100064: mouth_r1
+    100066: mouth_r2
+    100068: mouth_r3
+    100070: neck
+    100072: neck2
+    100074: shoulder_l
+    100076: shoulder_r
+    400000: //RootNode
+    400002: antrope
+    400004: arb_l2
+    400006: arm_l
+    400008: arm_r
+    400010: arm_r2
+    400012: Armature
+    400014: body
+    400016: bust
+    400018: foot_l_behind1
+    400020: foot_l_behind2
+    400022: foot_l_behind3
+    400024: foot_l_front1
+    400026: foot_l_front2
+    400028: foot_r_behind1
+    400030: foot_r_behind2
+    400032: foot_r_behind3
+    400034: foot_r_front1
+    400036: foot_r_front2
+    400038: hand_l
+    400040: hand_l2
+    400042: hand_r2
+    400044: head
+    400046: hnd_r
+    400048: leg_l_behind
+    400050: leg_l_front
+    400052: leg_r_behind
+    400054: leg_r_front
+    400056: mater
+    400058: mouth_l1
+    400060: mouth_l2
+    400062: mouth_l3
+    400064: mouth_r1
+    400066: mouth_r2
+    400068: mouth_r3
+    400070: neck
+    400072: neck2
+    400074: shoulder_l
+    400076: shoulder_r
+    4300000: antrope
+    7400000: Default Take
+    7400002: idol
+    7400004: walk_001
+    7400006: walk_002
+    9500000: //RootNode
+    13700000: antrope
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 99
+      lastFrame: 161
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: antrope
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/mater
+        weight: 1
+      - path: Armature/mater/body
+        weight: 1
+      - path: Armature/mater/body/bust
+        weight: 1
+      - path: Armature/mater/body/bust/neck
+        weight: 1
+      - path: Armature/mater/body/bust/neck/neck2
+        weight: 1
+      - path: Armature/mater/body/bust/neck/neck2/head
+        weight: 1
+      - path: Armature/mater/body/bust/neck/neck2/mouth_l1
+        weight: 1
+      - path: Armature/mater/body/bust/neck/neck2/mouth_l1/mouth_l2
+        weight: 1
+      - path: Armature/mater/body/bust/neck/neck2/mouth_l1/mouth_l2/mouth_l3
+        weight: 1
+      - path: Armature/mater/body/bust/neck/neck2/mouth_r1
+        weight: 1
+      - path: Armature/mater/body/bust/neck/neck2/mouth_r1/mouth_r2
+        weight: 1
+      - path: Armature/mater/body/bust/neck/neck2/mouth_r1/mouth_r2/mouth_r3
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_l
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_l/arm_l
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_l/arm_l/arb_l2
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_l/arm_l/arb_l2/hand_l
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_l/arm_l/arb_l2/hand_l/hand_l2
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_r
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_r/arm_r
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_r/arm_r/arm_r2
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_r/arm_r/arm_r2/hnd_r
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_r/arm_r/arm_r2/hnd_r/hand_r2
+        weight: 1
+      - path: Armature/mater/leg_l_behind
+        weight: 1
+      - path: Armature/mater/leg_l_behind/foot_l_behind1
+        weight: 1
+      - path: Armature/mater/leg_l_behind/foot_l_behind1/foot_l_behind2
+        weight: 1
+      - path: Armature/mater/leg_l_behind/foot_l_behind1/foot_l_behind2/foot_l_behind3
+        weight: 1
+      - path: Armature/mater/leg_l_front
+        weight: 1
+      - path: Armature/mater/leg_l_front/foot_l_front1
+        weight: 1
+      - path: Armature/mater/leg_l_front/foot_l_front1/foot_l_front2
+        weight: 1
+      - path: Armature/mater/leg_r_behind
+        weight: 1
+      - path: Armature/mater/leg_r_behind/foot_r_behind1
+        weight: 1
+      - path: Armature/mater/leg_r_behind/foot_r_behind1/foot_r_behind2
+        weight: 1
+      - path: Armature/mater/leg_r_behind/foot_r_behind1/foot_r_behind2/foot_r_behind3
+        weight: 1
+      - path: Armature/mater/leg_r_front
+        weight: 1
+      - path: Armature/mater/leg_r_front/foot_r_front1
+        weight: 1
+      - path: Armature/mater/leg_r_front/foot_r_front1/foot_r_front2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: idol
+      takeName: idol
+      firstFrame: 100
+      lastFrame: 159
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: antrope
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/mater
+        weight: 1
+      - path: Armature/mater/body
+        weight: 1
+      - path: Armature/mater/body/bust
+        weight: 1
+      - path: Armature/mater/body/bust/neck
+        weight: 1
+      - path: Armature/mater/body/bust/neck/neck2
+        weight: 1
+      - path: Armature/mater/body/bust/neck/neck2/head
+        weight: 1
+      - path: Armature/mater/body/bust/neck/neck2/mouth_l1
+        weight: 1
+      - path: Armature/mater/body/bust/neck/neck2/mouth_l1/mouth_l2
+        weight: 1
+      - path: Armature/mater/body/bust/neck/neck2/mouth_l1/mouth_l2/mouth_l3
+        weight: 1
+      - path: Armature/mater/body/bust/neck/neck2/mouth_r1
+        weight: 1
+      - path: Armature/mater/body/bust/neck/neck2/mouth_r1/mouth_r2
+        weight: 1
+      - path: Armature/mater/body/bust/neck/neck2/mouth_r1/mouth_r2/mouth_r3
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_l
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_l/arm_l
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_l/arm_l/arb_l2
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_l/arm_l/arb_l2/hand_l
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_l/arm_l/arb_l2/hand_l/hand_l2
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_r
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_r/arm_r
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_r/arm_r/arm_r2
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_r/arm_r/arm_r2/hnd_r
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_r/arm_r/arm_r2/hnd_r/hand_r2
+        weight: 1
+      - path: Armature/mater/leg_l_behind
+        weight: 1
+      - path: Armature/mater/leg_l_behind/foot_l_behind1
+        weight: 1
+      - path: Armature/mater/leg_l_behind/foot_l_behind1/foot_l_behind2
+        weight: 1
+      - path: Armature/mater/leg_l_behind/foot_l_behind1/foot_l_behind2/foot_l_behind3
+        weight: 1
+      - path: Armature/mater/leg_l_front
+        weight: 1
+      - path: Armature/mater/leg_l_front/foot_l_front1
+        weight: 1
+      - path: Armature/mater/leg_l_front/foot_l_front1/foot_l_front2
+        weight: 1
+      - path: Armature/mater/leg_r_behind
+        weight: 1
+      - path: Armature/mater/leg_r_behind/foot_r_behind1
+        weight: 1
+      - path: Armature/mater/leg_r_behind/foot_r_behind1/foot_r_behind2
+        weight: 1
+      - path: Armature/mater/leg_r_behind/foot_r_behind1/foot_r_behind2/foot_r_behind3
+        weight: 1
+      - path: Armature/mater/leg_r_front
+        weight: 1
+      - path: Armature/mater/leg_r_front/foot_r_front1
+        weight: 1
+      - path: Armature/mater/leg_r_front/foot_r_front1/foot_r_front2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: walk_001
+      takeName: walk_001
+      firstFrame: 0
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: antrope
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/mater
+        weight: 1
+      - path: Armature/mater/body
+        weight: 1
+      - path: Armature/mater/body/bust
+        weight: 1
+      - path: Armature/mater/body/bust/neck
+        weight: 1
+      - path: Armature/mater/body/bust/neck/neck2
+        weight: 1
+      - path: Armature/mater/body/bust/neck/neck2/head
+        weight: 1
+      - path: Armature/mater/body/bust/neck/neck2/mouth_l1
+        weight: 1
+      - path: Armature/mater/body/bust/neck/neck2/mouth_l1/mouth_l2
+        weight: 1
+      - path: Armature/mater/body/bust/neck/neck2/mouth_l1/mouth_l2/mouth_l3
+        weight: 1
+      - path: Armature/mater/body/bust/neck/neck2/mouth_r1
+        weight: 1
+      - path: Armature/mater/body/bust/neck/neck2/mouth_r1/mouth_r2
+        weight: 1
+      - path: Armature/mater/body/bust/neck/neck2/mouth_r1/mouth_r2/mouth_r3
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_l
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_l/arm_l
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_l/arm_l/arb_l2
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_l/arm_l/arb_l2/hand_l
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_l/arm_l/arb_l2/hand_l/hand_l2
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_r
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_r/arm_r
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_r/arm_r/arm_r2
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_r/arm_r/arm_r2/hnd_r
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_r/arm_r/arm_r2/hnd_r/hand_r2
+        weight: 1
+      - path: Armature/mater/leg_l_behind
+        weight: 1
+      - path: Armature/mater/leg_l_behind/foot_l_behind1
+        weight: 1
+      - path: Armature/mater/leg_l_behind/foot_l_behind1/foot_l_behind2
+        weight: 1
+      - path: Armature/mater/leg_l_behind/foot_l_behind1/foot_l_behind2/foot_l_behind3
+        weight: 1
+      - path: Armature/mater/leg_l_front
+        weight: 1
+      - path: Armature/mater/leg_l_front/foot_l_front1
+        weight: 1
+      - path: Armature/mater/leg_l_front/foot_l_front1/foot_l_front2
+        weight: 1
+      - path: Armature/mater/leg_r_behind
+        weight: 1
+      - path: Armature/mater/leg_r_behind/foot_r_behind1
+        weight: 1
+      - path: Armature/mater/leg_r_behind/foot_r_behind1/foot_r_behind2
+        weight: 1
+      - path: Armature/mater/leg_r_behind/foot_r_behind1/foot_r_behind2/foot_r_behind3
+        weight: 1
+      - path: Armature/mater/leg_r_front
+        weight: 1
+      - path: Armature/mater/leg_r_front/foot_r_front1
+        weight: 1
+      - path: Armature/mater/leg_r_front/foot_r_front1/foot_r_front2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: walk_002
+      takeName: walk_002
+      firstFrame: 0
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: antrope
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/mater
+        weight: 1
+      - path: Armature/mater/body
+        weight: 1
+      - path: Armature/mater/body/bust
+        weight: 1
+      - path: Armature/mater/body/bust/neck
+        weight: 1
+      - path: Armature/mater/body/bust/neck/neck2
+        weight: 1
+      - path: Armature/mater/body/bust/neck/neck2/head
+        weight: 1
+      - path: Armature/mater/body/bust/neck/neck2/mouth_l1
+        weight: 1
+      - path: Armature/mater/body/bust/neck/neck2/mouth_l1/mouth_l2
+        weight: 1
+      - path: Armature/mater/body/bust/neck/neck2/mouth_l1/mouth_l2/mouth_l3
+        weight: 1
+      - path: Armature/mater/body/bust/neck/neck2/mouth_r1
+        weight: 1
+      - path: Armature/mater/body/bust/neck/neck2/mouth_r1/mouth_r2
+        weight: 1
+      - path: Armature/mater/body/bust/neck/neck2/mouth_r1/mouth_r2/mouth_r3
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_l
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_l/arm_l
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_l/arm_l/arb_l2
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_l/arm_l/arb_l2/hand_l
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_l/arm_l/arb_l2/hand_l/hand_l2
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_r
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_r/arm_r
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_r/arm_r/arm_r2
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_r/arm_r/arm_r2/hnd_r
+        weight: 1
+      - path: Armature/mater/body/bust/shoulder_r/arm_r/arm_r2/hnd_r/hand_r2
+        weight: 1
+      - path: Armature/mater/leg_l_behind
+        weight: 1
+      - path: Armature/mater/leg_l_behind/foot_l_behind1
+        weight: 1
+      - path: Armature/mater/leg_l_behind/foot_l_behind1/foot_l_behind2
+        weight: 1
+      - path: Armature/mater/leg_l_behind/foot_l_behind1/foot_l_behind2/foot_l_behind3
+        weight: 1
+      - path: Armature/mater/leg_l_front
+        weight: 1
+      - path: Armature/mater/leg_l_front/foot_l_front1
+        weight: 1
+      - path: Armature/mater/leg_l_front/foot_l_front1/foot_l_front2
+        weight: 1
+      - path: Armature/mater/leg_r_behind
+        weight: 1
+      - path: Armature/mater/leg_r_behind/foot_r_behind1
+        weight: 1
+      - path: Armature/mater/leg_r_behind/foot_r_behind1/foot_r_behind2
+        weight: 1
+      - path: Armature/mater/leg_r_behind/foot_r_behind1/foot_r_behind2/foot_r_behind3
+        weight: 1
+      - path: Armature/mater/leg_r_front
+        weight: 1
+      - path: Armature/mater/leg_r_front/foot_r_front1
+        weight: 1
+      - path: Armature/mater/leg_r_front/foot_r_front1/foot_r_front2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
