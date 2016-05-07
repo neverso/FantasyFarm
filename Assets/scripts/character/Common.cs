@@ -5,6 +5,9 @@ using System.Collections;
  * モンスターの共通挙動を制御する。
  * 固有の動きは個別で設定すること
  */
+using UnityStandardAssets.CrossPlatformInput;
+
+
 public class Common : MonoBehaviour {
 
 	// 牧場モードかどうか
@@ -25,15 +28,20 @@ public class Common : MonoBehaviour {
 	// アニメーション
 	protected Animator animator;
 
+	public float charaSpeed = 6.0F;
+	public float jumpSpeed = 8.0F;
+	public float gravity = 20.0F;
+	protected Vector3 moveDirection = Vector3.zero;
+	protected CharacterController controller;
+
 	// Use this for initialization
-	void Start () {
+	public void Start () {
+		// 共通アニメーション
 		animator = GetComponent<Animator>();
+		// 牧場モード用
 		targetPosition = GetRandomPositionOnLevel();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+		// キャラコン
+		controller = GetComponent<CharacterController>();
 	}
 
 	protected void moveRandom() {
@@ -58,6 +66,9 @@ public class Common : MonoBehaviour {
 		return new Vector3(Random.Range(-levelSize, levelSize), 0, Random.Range(-levelSize, levelSize));
 	}
 
+	/**
+	 * 図鑑モードで使われる、モンスターの回転
+	 */
 	protected void rotateMonster() {
 		if (Input.GetKey("right")) {
 			transform.Rotate(0, 10, 0);
@@ -65,5 +76,28 @@ public class Common : MonoBehaviour {
 		if (Input.GetKey ("left")) {
 			transform.Rotate(0, -10, 0);
 		}
+	}
+
+	/**
+	 * minusDirectionには「-1」か「1」を指定。
+	 * -1を指定すると、操作逆になる。
+	 */
+	protected void moveTraining(int minusDirection = 1) {
+		// アニメーション
+		if (CrossPlatformInputManager.GetAxisRaw ("Horizontal") > 0 || CrossPlatformInputManager.GetAxisRaw ("Vertical") > 0) {
+			animator.SetBool("isWalk", true);
+		} else {
+			animator.SetBool("isWalk", false);
+		}
+
+		// 向き
+		transform.Rotate(0, CrossPlatformInputManager.GetAxisRaw("Horizontal"), 0);
+
+		// 移動
+		moveDirection = new Vector3 (minusDirection * CrossPlatformInputManager.GetAxisRaw("Horizontal"), 0, minusDirection * CrossPlatformInputManager.GetAxisRaw("Vertical"));
+		moveDirection = transform.TransformDirection (moveDirection);
+		moveDirection *= charaSpeed;
+		moveDirection.y -= gravity * Time.deltaTime;
+		controller.Move(moveDirection * Time.deltaTime);
 	}
 }

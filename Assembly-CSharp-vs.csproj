@@ -110,11 +110,13 @@
      <Compile Include="Assets\scripts\entity\Monsters.cs" />
      <Compile Include="Assets\scripts\entity\MyMonster.cs" />
      <Compile Include="Assets\scripts\entity\Status.cs" />
+     <Compile Include="Assets\scripts\gui\AttackButton.cs" />
      <Compile Include="Assets\scripts\gui\MonsterListSelected.cs" />
      <Compile Include="Assets\scripts\gui\MonsterScrollList.cs" />
      <Compile Include="Assets\scripts\gui\MyMosnsterText.cs" />
      <Compile Include="Assets\scripts\gui\NickNameText.cs" />
      <Compile Include="Assets\scripts\gui\StatusText.cs" />
+     <Compile Include="Assets\scripts\materials\Stone.cs" />
      <Compile Include="Assets\scripts\scene\BirthScene.cs" />
      <Compile Include="Assets\scripts\scene\FarmScene.cs" />
      <Compile Include="Assets\scripts\scene\MonsterBookScene.cs" />
