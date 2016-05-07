@@ -1,10 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\scene\TrainingScene.cs">
     <Files>
-      <File FileName="Assets\scripts\gui\AttackButton.cs" Line="27" Column="3" />
-      <File FileName="Assets\scripts\scene\TrainingScene.cs" Line="93" Column="17" />
-      <File FileName="Assets\scripts\materials\Stone.cs" Line="18" Column="91" />
+      <File FileName="Assets\scripts\scene\TrainingScene.cs" Line="15" Column="25" />
+      <File FileName="Assets\scripts\util\CameraControl.cs" Line="21" Column="1" />
+      <File FileName="c:\Users\y.eguchi0526\Documents\unity5\FantasyFarm\Assets\scripts\character\Common.cs" Line="76" Column="31" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

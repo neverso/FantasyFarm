@@ -103,8 +103,9 @@ public class TrainingScene : MonoBehaviour {
 				completeButton.image.color = Colors.Alpha(Colors.White, 1f);
 				completeButton.GetComponentInChildren<Text>().color = Colors.Alpha(Colors.Black, 1f);
 				isGameStop = true;
+				CameraControl.isReady = false;
 				AttackButton.isReadyState = false;
-				Destroy(createdObj);
+				//Destroy(createdObj);
 				_textCountdown.gameObject.SetActive(true);
 				_textCountdown.text = "TIME UP!!";
 			}

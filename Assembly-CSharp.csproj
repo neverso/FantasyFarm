@@ -1,179 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-	<ProductVersion>10.0.20506</ProductVersion>
-	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{B81E7404-3561-D3C2-3BB3-A5737FF5D5F2}</ProjectGuid>
-	<OutputType>Library</OutputType>
-	<AppDesignerFolder>Properties</AppDesignerFolder>
-	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-CSharp</AssemblyName>
-	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
-	<FileAlignment>512</FileAlignment>
-	<BaseDirectory>Assets</BaseDirectory>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B81E7404-3561-D3C2-3BB3-A5737FF5D5F2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-	<DebugSymbols>true</DebugSymbols>
-	<DebugType>full</DebugType>
-	<Optimize>false</Optimize>
-	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_5_1_0;UNITY_5_1;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_LICENSE;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_EDITOR_METRICS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_MONO;DEVELOPMENT_BUILD;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;CROSS_PLATFORM_INPUT;MOBILE_INPUT</DefineConstants>
-	<ErrorReport>prompt</ErrorReport>
-	<WarningLevel>4</WarningLevel>
-	<NoWarn>0169</NoWarn>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_1_0;UNITY_5_1;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_LICENSE;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_EDITOR_METRICS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_MONO;DEVELOPMENT_BUILD;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;CROSS_PLATFORM_INPUT;MOBILE_INPUT</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-	<DebugType>pdbonly</DebugType>
-	<Optimize>true</Optimize>
-	<OutputPath>Temp\bin\Release\</OutputPath>
-	<DefineConstants>TRACE</DefineConstants>
-	<ErrorReport>prompt</ErrorReport>
-	<WarningLevel>4</WarningLevel>
-	<NoWarn>0169</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-	<Reference Include="System" />
-    <Reference Include="System.XML" />
-	<Reference Include="System.Core" />
-	<Reference Include="System.Xml.Linq" />
-	<Reference Include="UnityEngine">
-	  <HintPath>C:/Unity5/Editor/Data/Managed/UnityEngine.dll</HintPath>
-	</Reference>
-	<Reference Include="UnityEditor">
-	  <HintPath>C:/Unity5/Editor/Data/Managed/UnityEditor.dll</HintPath>
-	</Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Unity5\Editor\Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:\Unity5\Editor\Data\Managed\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Elementals\Demo\Scripts\GE_Elementals_Demo.cs" />
-     <Compile Include="Assets\GE Common Assets\GE Orbit Camera\Scripts\GE_OrbitCamera.cs" />
-     <Compile Include="Assets\GE Common Assets\GE Orbit Camera\Scripts\GE_OrbitCameraUI.cs" />
-     <Compile Include="Assets\GE Common Assets\GE Toggle Full Screen\Scripts\GE_ToggleFullScreenUI.cs" />
-     <Compile Include="Assets\GE Common Assets\GE Touch Joystick\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs" />
-     <Compile Include="Assets\GE Common Assets\GE Touch Joystick\Characters\FirstPersonCharacter\Scripts\HeadBob.cs" />
-     <Compile Include="Assets\GE Common Assets\GE Touch Joystick\Characters\FirstPersonCharacter\Scripts\MouseLook.cs" />
-     <Compile Include="Assets\GE Common Assets\GE Touch Joystick\Characters\FirstPersonCharacter\Scripts\RigidbodyFirstPersonController.cs" />
-     <Compile Include="Assets\GE Common Assets\GE Touch Joystick\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
-     <Compile Include="Assets\GE Common Assets\GE Touch Joystick\CrossPlatformInput\Scripts\ButtonHandler.cs" />
-     <Compile Include="Assets\GE Common Assets\GE Touch Joystick\CrossPlatformInput\Scripts\CameraSwitch.cs" />
-     <Compile Include="Assets\GE Common Assets\GE Touch Joystick\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
-     <Compile Include="Assets\GE Common Assets\GE Touch Joystick\CrossPlatformInput\Scripts\InputAxisScrollbar.cs" />
-     <Compile Include="Assets\GE Common Assets\GE Touch Joystick\CrossPlatformInput\Scripts\Joystick.cs" />
-     <Compile Include="Assets\GE Common Assets\GE Touch Joystick\CrossPlatformInput\Scripts\LevelReset.cs" />
-     <Compile Include="Assets\GE Common Assets\GE Touch Joystick\CrossPlatformInput\Scripts\MobileControlRig.cs" />
-     <Compile Include="Assets\GE Common Assets\GE Touch Joystick\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
-     <Compile Include="Assets\GE Common Assets\GE Touch Joystick\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
-     <Compile Include="Assets\GE Common Assets\GE Touch Joystick\CrossPlatformInput\Scripts\TiltInput.cs" />
-     <Compile Include="Assets\GE Common Assets\GE Touch Joystick\CrossPlatformInput\Scripts\TouchPad.cs" />
-     <Compile Include="Assets\GE Common Assets\GE Touch Joystick\CrossPlatformInput\Scripts\VirtualInput.cs" />
-     <Compile Include="Assets\GE Common Assets\GE Touch Joystick\Utility\CameraRefocus.cs" />
-     <Compile Include="Assets\GE Common Assets\GE Touch Joystick\Utility\CurveControlledBob.cs" />
-     <Compile Include="Assets\GE Common Assets\GE Touch Joystick\Utility\FOVKick.cs" />
-     <Compile Include="Assets\GE Common Assets\GE Touch Joystick\Utility\LerpControlledBob.cs" />
-     <Compile Include="Assets\GE Common Assets\Scripts\GE_UIResponder.cs" />
-     <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo00.cs" />
-     <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo01.cs" />
-     <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo02.cs" />
-     <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo03.cs" />
-     <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo04.cs" />
-     <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo05.cs" />
-     <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo06.cs" />
-     <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo07.cs" />
-     <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_Demo08.cs" />
-     <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_DemoPlaySound.cs" />
-     <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo (CSharp)\Scripts\GA_FREE_OpenOtherScene.cs" />
-     <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo Basic (CSharp)\Scripts\GUIAnimatorFREEDemo.cs" />
-     <Compile Include="Assets\Script\DataTable.cs" />
-     <Compile Include="Assets\Script\SqliteDatabase.cs" />
-     <Compile Include="Assets\TouchManager\Sample\TouchListenerSample.cs" />
-     <Compile Include="Assets\TouchManager\Scripts\Circle.cs" />
-     <Compile Include="Assets\TouchManager\Scripts\CustomInput.cs" />
-     <Compile Include="Assets\TouchManager\Scripts\DetectGestures\DragDetector.cs" />
-     <Compile Include="Assets\TouchManager\Scripts\DetectGestures\FlickDetector.cs" />
-     <Compile Include="Assets\TouchManager\Scripts\DetectGestures\IGestureDetector.cs" />
-     <Compile Include="Assets\TouchManager\Scripts\DetectGestures\TouchDetector.cs" />
-     <Compile Include="Assets\TouchManager\Scripts\Events\CustomInputEventArgs.cs" />
-     <Compile Include="Assets\TouchManager\Scripts\Events\FlickEventArgs.cs" />
-     <Compile Include="Assets\TouchManager\Scripts\TouchManager.cs" />
-     <Compile Include="Assets\scripts\character\Antrope.cs" />
-     <Compile Include="Assets\scripts\character\Aodanuki.cs" />
-     <Compile Include="Assets\scripts\character\Common.cs" />
-     <Compile Include="Assets\scripts\character\CraySlug.cs" />
-     <Compile Include="Assets\scripts\character\Daruman.cs" />
-     <Compile Include="Assets\scripts\character\Goalem.cs" />
-     <Compile Include="Assets\scripts\character\Goast.cs" />
-     <Compile Include="Assets\scripts\character\Kaoari.cs" />
-     <Compile Include="Assets\scripts\db\MonsrersTable.cs" />
-     <Compile Include="Assets\scripts\db\MyMonsterTable.cs" />
-     <Compile Include="Assets\scripts\db\StatusTable.cs" />
-     <Compile Include="Assets\scripts\entity\Monsters.cs" />
-     <Compile Include="Assets\scripts\entity\MyMonster.cs" />
-     <Compile Include="Assets\scripts\entity\Status.cs" />
-     <Compile Include="Assets\scripts\gui\AttackButton.cs" />
-     <Compile Include="Assets\scripts\gui\MonsterListSelected.cs" />
-     <Compile Include="Assets\scripts\gui\MonsterScrollList.cs" />
-     <Compile Include="Assets\scripts\gui\MyMosnsterText.cs" />
-     <Compile Include="Assets\scripts\gui\NickNameText.cs" />
-     <Compile Include="Assets\scripts\gui\StatusText.cs" />
-     <Compile Include="Assets\scripts\materials\Stone.cs" />
-     <Compile Include="Assets\scripts\scene\BirthScene.cs" />
-     <Compile Include="Assets\scripts\scene\FarmScene.cs" />
-     <Compile Include="Assets\scripts\scene\MonsterBookScene.cs" />
-     <Compile Include="Assets\scripts\scene\SceneManager.cs" />
-     <Compile Include="Assets\scripts\scene\TrainingScene.cs" />
-     <Compile Include="Assets\scripts\util\CameraControl.cs" />
-     <Compile Include="Assets\scripts\util\Colors.cs" />
-     <Compile Include="Assets\scripts\util\Const.cs" />
-     <Compile Include="Assets\scripts\util\UnityAdd.cs" />
-     <None Include="Assets\Plugins\Android\unityads\res\layout\unityads_view_video_play.xml" />
-     <None Include="Assets\Plugins\Android\unityads\proguard-project.txt" />
-     <None Include="Assets\Plugins\Android\unityads\build.xml" />
-     <None Include="Assets\Plugins\Android\unityads\res\layout\unityads_button_audio_toggle.xml" />
-     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
-     <None Include="Assets\Plugins\Android\unityads\res\drawable\unityads_background_button_pause.xml" />
-     <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
-     <None Include="Assets\Plugins\Android\unityads\res\drawable\unityads_icon_speaker_triangle.xml" />
-     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
-     <None Include="Assets\Plugins\Android\unityads\res\values\strings.xml" />
-     <None Include="Assets\Plugins\Android\unityads\res\drawable\unityads_icon_speaker_waves.xml" />
-     <None Include="Assets\Elementals\Readme.txt" />
-     <None Include="Assets\Plugins\Android\unityads\res\drawable\unityads_icon_speaker_base.xml" />
-     <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
-     <None Include="Assets\Plugins\Android\unityads\res\drawable\unityads_icon_play.xml" />
-     <None Include="Assets\GUI Animator\GUI Animator FREE\Readme.txt" />
-     <None Include="Assets\GE Common Assets\Readme.txt" />
-     <None Include="Assets\GUI Animator\GUI Animator FREE\!How to.txt" />
-     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
-     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
-     <None Include="Assets\Plugins\Android\unityads\res\layout\unityads_button_pause.xml" />
-     <None Include="Assets\Plugins\Android\unityads\res\layout\unityads_view_video_paused.xml" />
-     <None Include="Assets\Plugins\Android\unityads\AndroidManifest.xml" />
- <Reference Include="UnityEngine.UI">
- <HintPath>C:/Unity5/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Networking">
- <HintPath>C:/Unity5/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Unity5/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
- </Reference>
- <Reference Include="GETween">
- <HintPath>C:/Users/y.eguchi0526/Documents/unity5/FantasyFarm/Assets/GUI Animator/Common/Plugins/GETween.dll</HintPath>
- </Reference>
- <Reference Include="GUIAnimatorFREE">
- <HintPath>C:/Users/y.eguchi0526/Documents/unity5/FantasyFarm/Assets/GUI Animator/GUI Animator FREE/Plugins/GUIAnimatorFREE.dll</HintPath>
- </Reference>
- <Reference Include="zxing">
- <HintPath>C:/Users/y.eguchi0526/Documents/unity5/FantasyFarm/Assets/Plugins/zxing.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.iOS.Extensions.Xcode">
- <HintPath>C:/Unity5/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
- </Reference>
+    <Compile Include="Assets\Elementals\Demo\Scripts\GE_Elementals_Demo.cs" />
+    <Compile Include="Assets\GE Common Assets\GE Orbit Camera\Scripts\GE_OrbitCamera.cs" />
+    <Compile Include="Assets\GE Common Assets\GE Orbit Camera\Scripts\GE_OrbitCameraUI.cs" />
+    <Compile Include="Assets\GE Common Assets\GE Toggle Full Screen\Scripts\GE_ToggleFullScreenUI.cs" />
+    <Compile Include="Assets\GE Common Assets\GE Touch Joystick\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs" />
+    <Compile Include="Assets\GE Common Assets\GE Touch Joystick\Characters\FirstPersonCharacter\Scripts\HeadBob.cs" />
+    <Compile Include="Assets\GE Common Assets\GE Touch Joystick\Characters\FirstPersonCharacter\Scripts\MouseLook.cs" />
+    <Compile Include="Assets\GE Common Assets\GE Touch Joystick\Characters\FirstPersonCharacter\Scripts\RigidbodyFirstPersonController.cs" />
+    <Compile Include="Assets\GE Common Assets\GE Touch Joystick\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
+    <Compile Include="Assets\GE Common Assets\GE Touch Joystick\CrossPlatformInput\Scripts\ButtonHandler.cs" />
+    <Compile Include="Assets\GE Common Assets\GE Touch Joystick\CrossPlatformInput\Scripts\CameraSwitch.cs" />
+    <Compile Include="Assets\GE Common Assets\GE Touch Joystick\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
+    <Compile Include="Assets\GE Common Assets\GE Touch Joystick\CrossPlatformInput\Scripts\InputAxisScrollbar.cs" />
+    <Compile Include="Assets\GE Common Assets\GE Touch Joystick\CrossPlatformInput\Scripts\Joystick.cs" />
+    <Compile Include="Assets\GE Common Assets\GE Touch Joystick\CrossPlatformInput\Scripts\LevelReset.cs" />
+    <Compile Include="Assets\GE Common Assets\GE Touch Joystick\CrossPlatformInput\Scripts\MobileControlRig.cs" />
+    <Compile Include="Assets\GE Common Assets\GE Touch Joystick\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
+    <Compile Include="Assets\GE Common Assets\GE Touch Joystick\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
+    <Compile Include="Assets\GE Common Assets\GE Touch Joystick\CrossPlatformInput\Scripts\TiltInput.cs" />
+    <Compile Include="Assets\GE Common Assets\GE Touch Joystick\CrossPlatformInput\Scripts\TouchPad.cs" />
+    <Compile Include="Assets\GE Common Assets\GE Touch Joystick\CrossPlatformInput\Scripts\VirtualInput.cs" />
+    <Compile Include="Assets\GE Common Assets\GE Touch Joystick\Utility\CameraRefocus.cs" />
+    <Compile Include="Assets\GE Common Assets\GE Touch Joystick\Utility\CurveControlledBob.cs" />
+    <Compile Include="Assets\GE Common Assets\GE Touch Joystick\Utility\FOVKick.cs" />
+    <Compile Include="Assets\GE Common Assets\GE Touch Joystick\Utility\LerpControlledBob.cs" />
+    <Compile Include="Assets\GE Common Assets\Scripts\GE_UIResponder.cs" />
+    <Compile Include="Assets\Script\DataTable.cs" />
+    <Compile Include="Assets\Script\SqliteDatabase.cs" />
+    <Compile Include="Assets\TouchManager\Sample\TouchListenerSample.cs" />
+    <Compile Include="Assets\TouchManager\Scripts\Circle.cs" />
+    <Compile Include="Assets\TouchManager\Scripts\CustomInput.cs" />
+    <Compile Include="Assets\TouchManager\Scripts\DetectGestures\DragDetector.cs" />
+    <Compile Include="Assets\TouchManager\Scripts\DetectGestures\FlickDetector.cs" />
+    <Compile Include="Assets\TouchManager\Scripts\DetectGestures\IGestureDetector.cs" />
+    <Compile Include="Assets\TouchManager\Scripts\DetectGestures\TouchDetector.cs" />
+    <Compile Include="Assets\TouchManager\Scripts\Events\CustomInputEventArgs.cs" />
+    <Compile Include="Assets\TouchManager\Scripts\Events\FlickEventArgs.cs" />
+    <Compile Include="Assets\TouchManager\Scripts\TouchManager.cs" />
+    <Compile Include="Assets\scripts\character\Antrope.cs" />
+    <Compile Include="Assets\scripts\character\Aodanuki.cs" />
+    <Compile Include="Assets\scripts\character\Common.cs" />
+    <Compile Include="Assets\scripts\character\CraySlug.cs" />
+    <Compile Include="Assets\scripts\character\Daruman.cs" />
+    <Compile Include="Assets\scripts\character\Goalem.cs" />
+    <Compile Include="Assets\scripts\character\Goast.cs" />
+    <Compile Include="Assets\scripts\character\Kaoari.cs" />
+    <Compile Include="Assets\scripts\db\MonsrersTable.cs" />
+    <Compile Include="Assets\scripts\db\MyMonsterTable.cs" />
+    <Compile Include="Assets\scripts\db\StatusTable.cs" />
+    <Compile Include="Assets\scripts\entity\Monsters.cs" />
+    <Compile Include="Assets\scripts\entity\MyMonster.cs" />
+    <Compile Include="Assets\scripts\entity\Status.cs" />
+    <Compile Include="Assets\scripts\gui\AttackButton.cs" />
+    <Compile Include="Assets\scripts\gui\MonsterListSelected.cs" />
+    <Compile Include="Assets\scripts\gui\MonsterScrollList.cs" />
+    <Compile Include="Assets\scripts\gui\MyMosnsterText.cs" />
+    <Compile Include="Assets\scripts\gui\NickNameText.cs" />
+    <Compile Include="Assets\scripts\gui\StatusText.cs" />
+    <Compile Include="Assets\scripts\materials\Stone.cs" />
+    <Compile Include="Assets\scripts\scene\BirthScene.cs" />
+    <Compile Include="Assets\scripts\scene\FarmScene.cs" />
+    <Compile Include="Assets\scripts\scene\MonsterBookScene.cs" />
+    <Compile Include="Assets\scripts\scene\SceneManager.cs" />
+    <Compile Include="Assets\scripts\scene\TrainingScene.cs" />
+    <Compile Include="Assets\scripts\util\CameraControl.cs" />
+    <Compile Include="Assets\scripts\util\Colors.cs" />
+    <Compile Include="Assets\scripts\util\Const.cs" />
+    <Compile Include="Assets\scripts\util\UnityAdd.cs" />
+    <None Include="Assets\Plugins\Android\unityads\res\layout\unityads_view_video_play.xml" />
+    <None Include="Assets\Plugins\Android\unityads\proguard-project.txt" />
+    <None Include="Assets\Plugins\Android\unityads\build.xml" />
+    <None Include="Assets\Plugins\Android\unityads\res\layout\unityads_button_audio_toggle.xml" />
+    <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
+    <None Include="Assets\Plugins\Android\unityads\res\drawable\unityads_background_button_pause.xml" />
+    <None Include="Assets\Plugins\Android\unityads\res\drawable\unityads_icon_speaker_triangle.xml" />
+    <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+    <None Include="Assets\Plugins\Android\unityads\res\values\strings.xml" />
+    <None Include="Assets\Plugins\Android\unityads\res\drawable\unityads_icon_speaker_waves.xml" />
+    <None Include="Assets\Elementals\Readme.txt" />
+    <None Include="Assets\Plugins\Android\unityads\res\drawable\unityads_icon_speaker_base.xml" />
+    <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
+    <None Include="Assets\Plugins\Android\unityads\res\drawable\unityads_icon_play.xml" />
+    <None Include="Assets\GUI Animator\GUI Animator FREE\Readme.txt" />
+    <None Include="Assets\GE Common Assets\Readme.txt" />
+    <None Include="Assets\GUI Animator\GUI Animator FREE\!How to.txt" />
+    <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
+    <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
+    <None Include="Assets\Plugins\Android\unityads\res\layout\unityads_button_pause.xml" />
+    <None Include="Assets\Plugins\Android\unityads\res\layout\unityads_view_video_paused.xml" />
+    <None Include="Assets\Plugins\Android\unityads\AndroidManifest.xml" />
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:\Unity5\Editor\Data\UnityExtensions\Unity\GUISystem\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>C:\Unity5\Editor\Data\UnityExtensions\Unity\Networking\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>C:\Unity5\Editor\Data\UnityExtensions\Unity\UnityAnalytics\UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="GETween">
+      <HintPath>C:\Users\y.eguchi0526\Documents\unity5\FantasyFarm\Assets\GUI Animator\Common\Plugins\GETween.dll</HintPath>
+    </Reference>
+    <Reference Include="GUIAnimatorFREE">
+      <HintPath>C:\Users\y.eguchi0526\Documents\unity5\FantasyFarm\Assets\GUI Animator\GUI Animator FREE\Plugins\GUIAnimatorFREE.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing">
+      <HintPath>C:\Users\y.eguchi0526\Documents\unity5\FantasyFarm\Assets\Plugins\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>C:\Unity5\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo %28CSharp%29\Scripts\GA_FREE_Demo00.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo %28CSharp%29\Scripts\GA_FREE_Demo01.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo %28CSharp%29\Scripts\GA_FREE_Demo02.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo %28CSharp%29\Scripts\GA_FREE_Demo03.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo %28CSharp%29\Scripts\GA_FREE_Demo04.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo %28CSharp%29\Scripts\GA_FREE_Demo05.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo %28CSharp%29\Scripts\GA_FREE_Demo06.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo %28CSharp%29\Scripts\GA_FREE_Demo07.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo %28CSharp%29\Scripts\GA_FREE_Demo08.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo %28CSharp%29\Scripts\GA_FREE_DemoPlaySound.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo %28CSharp%29\Scripts\GA_FREE_OpenOtherScene.cs" />
+    <Compile Include="Assets\GUI Animator\GUI Animator FREE\Demo Basic %28CSharp%29\Scripts\GUIAnimatorFREEDemo.cs" />
+    <None Include="Assets\Standard Assets\Environment\Water %28Basic%29\Shaders\FXWaterBasic.shader" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{8E7ABDE9-A937-7E6A-FAD5-D3607081FCCD}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{8E7ABDE9-A937-7E6A-FAD5-D3607081FCCD}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -183,5 +184,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  
 </Project>

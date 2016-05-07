@@ -5,7 +5,7 @@ public class CameraControl : MonoBehaviour {
 	
 	private GameObject player = null;
 	public static bool isReady = false;
-	
+
 	void Start () {
 		isReady = false;
 	}
