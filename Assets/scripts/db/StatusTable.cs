@@ -23,12 +23,11 @@ namespace Database
 		}
 
 		/**
-		 * typeをもとに自分の今使用しているモンスターステータスを取得する
-		 * typeにかんしては、Const.Constを参照
+		 * idをもとに自分の今使用しているモンスターステータスを取得する
 		 */
-		public Entity.Status selectStatusByType(int type) {
+		public Entity.Status selectStatusByID(int id) {
 			// Select
-			string selectQuery = "select * from Status where type = " + type;
+			string selectQuery = "select * from Status where id = " + id;
 			DataTable dataTable = sqlDB.ExecuteQuery(selectQuery);
 			Entity.Status entity = null;
 			foreach(DataRow dr in dataTable.Rows){

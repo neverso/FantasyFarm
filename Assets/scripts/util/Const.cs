@@ -16,7 +16,8 @@ namespace Const
 		public static readonly Dictionary<string, string> charactors = new Dictionary<string, string>();
 		public static readonly Dictionary<string, string> charactorNames = new Dictionary<string, string>();
 		public static readonly Dictionary<string, int> monsterTypes = new Dictionary<string, int>();
-		public static readonly string nowMyMonsterType = "mymonster_type";
+		public static readonly string nowMyMonsterID = "mymonster_id";
+
 
 		static Const() {
 			// prefabs

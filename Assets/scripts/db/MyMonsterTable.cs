@@ -28,18 +28,17 @@ namespace Database
 		 * @param type モンスタータイプ
 		 * 
 		 */
-		public void registMyMonster(string name, int type) {
-			string query = "insert into MyMonster values(" + name + ", 0," + type + ")";
+		public void registMyMonster(string dispName, string name, int type) {
+			string query = "insert into MyMonster(dispname, name, old, type) values('" + dispName + "','" + name + "', 0," + type + ")";
 			sqlDB.ExecuteNonQuery(query);
 		}
 
 		/**
-		 * typeをもとに自分の今使用しているモンスター情報を取得する
-		 * typeにかんしては、Const.Constを参照
+		 * idをもとに自分の今使用しているモンスター情報を取得する
 		 */
-		public Entity.MyMonster selectMyMoster(int type) {
+		public Entity.MyMonster selectMyMoster(int id) {
 			// Select
-			string selectQuery = "select * from MyMonster where type = " + type;
+			string selectQuery = "select * from MyMonster where id = " + id;
 			DataTable dataTable = sqlDB.ExecuteQuery(selectQuery);
 			Entity.MyMonster entity = null;
 			foreach(DataRow dr in dataTable.Rows){
@@ -52,7 +51,7 @@ namespace Database
 		 */
 		public List<Entity.MyMonster> selectMyMosters() {
 			// Select
-			string selectQuery = "select * from MyMonster";
+			string selectQuery = "select m1.id as id, m1.dispName  as dispname, m1.name as name, m1.old as old, m1.type as type from MyMonster m1 left join Monsters m2 ON m1.type = m2.type where m1.type = m2.type;";
 			DataTable dataTable = sqlDB.ExecuteQuery(selectQuery);
 			var entities = new List<Entity.MyMonster>();
 			foreach(DataRow dr in dataTable.Rows){
@@ -69,6 +68,32 @@ namespace Database
 			Entity.MyMonster entity = null;
 			foreach(DataRow dr in dataTable.Rows){
 				entity = new Entity.MyMonster((int)dr["id"], (string)dr["name"], (string)dr["dispname"], (int)dr["old"], (int)dr["type"]);
+			}
+			return entity;
+		}
+
+		/**
+		 * 全件削除
+		 */
+		public void deleteAll() {
+
+			string deleteQuery = "delete from MyMonster";
+			sqlDB.ExecuteNonQuery(deleteQuery);
+		}
+
+		/**
+		 * ニックネームをもとにentityを1件取得する
+		 */
+		public Entity.MyMonster selectMyMosterByNickName (string dispName)
+		{
+			// Select
+			string selectQuery = "select * from MyMonster where dispname = '" + dispName + "'";
+			DataTable dataTable = sqlDB.ExecuteQuery(selectQuery);
+			Entity.MyMonster entity = null;
+			if (dataTable.Rows != null) {
+				foreach(DataRow dr in dataTable.Rows){
+					entity = new Entity.MyMonster((int)dr["id"], (string)dr["name"], (string)dr["dispname"], (int)dr["old"], (int)dr["type"]);
+				}
 			}
 			return entity;
 		}

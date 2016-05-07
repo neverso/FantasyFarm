@@ -33,7 +33,7 @@ public class FarmScene : MonoBehaviour {
 	Entity.MyMonster getMyMonstername ()
 	{
 		Database.MyMonsterTable mmt = new Database.MyMonsterTable ();
-		Entity.MyMonster entity = mmt.selectMyMoster (PlayerPrefs.GetInt(Const.Const.nowMyMonsterType, 1));
+		Entity.MyMonster entity = mmt.selectMyMoster (PlayerPrefs.GetInt(Const.Const.nowMyMonsterID, 1));
 		return entity;
 	}
 
@@ -45,7 +45,6 @@ public class FarmScene : MonoBehaviour {
 		GameObject prefab = (GameObject)Resources.Load (prefabName);
 		// プレハブからインスタンスを生成
 		GameObject createdObj = (GameObject)Instantiate (prefab, new Vector3(0, 0, 0), Quaternion.Euler(0, 180, 0));
-		Debug.Log (prefabName);
 		createdObj.GetComponent<Common>().isFarm = true;
 	}
 }

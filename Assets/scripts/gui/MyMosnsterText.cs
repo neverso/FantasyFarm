@@ -26,6 +26,11 @@ public class MyMosnsterText : MonoBehaviour {
 			myMonsterList.SetActive (true);
 			int index = 1;
 			foreach (Entity.MyMonster monster in list) {
+				Debug.Log(monster.getDispname() + " : " + monster.getName() + " : " + monster.getType());
+				if (GameObject.Find("MyMonster_" + index) == null) {
+					index++;
+					continue;
+				}
 				Button changeMonsterButton = GameObject.Find("MyMonster_" + index).GetComponent<Button>();
 				// ButtonのテキストにDBから取得した名前をあてはめる
 				Text text = changeMonsterButton.GetComponentInChildren<Text>();
@@ -44,22 +49,25 @@ public class MyMosnsterText : MonoBehaviour {
 		// クリックしたボタンのテキストを取得
 		Text text = gameObject.GetComponentInChildren<Text>();
 		// Monster一覧配列にない文字列なら無視
-		string identificationName = getIdentificationName (text.text);
+		Entity.MyMonster entity = getMyMonsterInfo (text.text);
+		if (entity == null) {
+			return ;
+		}
+		string identificationName = entity.getName ();
 		if (!Const.Const.monsterTypes.ContainsKey (identificationName)) {
 			return;
 		}
-		Debug.Log(Const.Const.monsterTypes[identificationName]);
 		// ユーザーがクリックしたモンスターのtypeをPlayersPrefに保存し、FarmSceneを再度ロードする。
-		PlayerPrefs.SetInt (Const.Const.nowMyMonsterType, Const.Const.monsterTypes[identificationName]);
+		PlayerPrefs.SetInt (Const.Const.nowMyMonsterID, entity.getId());
 		new SceneManager ().startGame ();
 	}
 
 	/*
-	 *Myモンスターの表示名から識別名を取得する
+	 *Myモンスターの表示名からモンスター情報を取得する
 	 */
-	string getIdentificationName (string dispName)
+	private Entity.MyMonster getMyMonsterInfo (string dispName)
 	{
 		Entity.MyMonster entity = new Database.MyMonsterTable ().selectMyMonsterIdentificationName (dispName);
-		return entity.getName ();
+		return entity;
 	}
 }

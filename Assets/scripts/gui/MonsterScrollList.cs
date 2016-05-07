@@ -30,6 +30,7 @@ public class MonsterScrollList : MonoBehaviour {
 		foreach(Entity.Monsters monster in monsters) {
 			var item = GameObject.Instantiate(prefab) as RectTransform;
 			item.SetParent(transform, false);
+			// 所有しているモンスターだけが閲覧可能
 			if (monster.getIsMine() == 0) {
 				item.GetComponent<Button>().enabled = false;
 				item.GetComponentInChildren<Text>().color = new Color(0f, 0f, 0f, 0.5f);

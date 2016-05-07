@@ -31,7 +31,7 @@ public class StatusText : MonoBehaviour {
 	public void showStatus() {
 		// PlayersPrefからtypeを取得し、typeに応じたステータスを取得する
 		Database.StatusTable table = new Database.StatusTable ();
-		Entity.Status result = table.selectStatusByType (PlayerPrefs.GetInt(Const.Const.nowMyMonsterType, 1));
+		Entity.Status result = table.selectStatusByID (PlayerPrefs.GetInt(Const.Const.nowMyMonsterID, 1));
 		Debug.Log (result.getType() + result.getLife() + result.getPower() + result.getWise() + result.getHit() + result.getAvoid() + result.getDeffence());
 		if (isDisp) {
 			status.SetActive (false);

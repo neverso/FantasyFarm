@@ -115,9 +115,13 @@
      <Compile Include="Assets\scripts\gui\MyMosnsterText.cs" />
      <Compile Include="Assets\scripts\gui\NickNameText.cs" />
      <Compile Include="Assets\scripts\gui\StatusText.cs" />
+     <Compile Include="Assets\scripts\scene\BirthScene.cs" />
      <Compile Include="Assets\scripts\scene\FarmScene.cs" />
      <Compile Include="Assets\scripts\scene\MonsterBookScene.cs" />
      <Compile Include="Assets\scripts\scene\SceneManager.cs" />
+     <Compile Include="Assets\scripts\scene\TrainingScene.cs" />
+     <Compile Include="Assets\scripts\util\CameraControl.cs" />
+     <Compile Include="Assets\scripts\util\Colors.cs" />
      <Compile Include="Assets\scripts\util\Const.cs" />
      <Compile Include="Assets\scripts\util\UnityAdd.cs" />
      <None Include="Assets\Plugins\Android\unityads\res\layout\unityads_view_video_play.xml" />

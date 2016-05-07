@@ -2,6 +2,9 @@
 using System.Collections;
 using UnityEngine.UI;
 
+/**
+ * モンスター図鑑の一覧から、一匹を選択した際の挙動
+ */
 public class MonsterListSelected : MonoBehaviour {
 
 	public Text monsterButtonName;
@@ -74,7 +77,7 @@ public class MonsterListSelected : MonoBehaviour {
 		});
 		Debug.Log (text);
 		if (createdObj != null) {
-			createdObj.transform.Rotate (new Vector3(0, -1 * (e.Input.DeltaPosition.y * 2), 0f));
+			createdObj.transform.Rotate (new Vector3(0f, -1 * (e.Input.DeltaPosition.y * 2), 0f));
 		}
 	}
 	// ここまで
