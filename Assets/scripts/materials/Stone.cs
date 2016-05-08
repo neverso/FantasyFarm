@@ -14,8 +14,12 @@ public class Stone : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision collision) {
-		Debug.Log (collision.gameObject.tag);
 		if (collision.gameObject.tag.Equals("enemy") || collision.gameObject.tag.Equals("terrain")) {
+			if (collision.gameObject.tag.Equals("enemy")) {
+				GameObject prefab = (GameObject)Resources.Load ("prefabs/BirthAction");
+				Instantiate (prefab, new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y, collision.gameObject.transform.position.z), Quaternion.Euler(0, 180, 0));
+				Destroy(collision.gameObject);
+			}
 			Destroy(gameObject);
 		}
 	}

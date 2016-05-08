@@ -3,6 +3,9 @@ using System.Collections;
 
 public class SceneManager : MonoBehaviour {
 
+	public void Start(){
+	}
+
 	// ファームに遷移
 	public void startGame() {
 		Application.LoadLevel("farm");

@@ -6,6 +6,7 @@ using System.Collections;
  * 固有の動きは個別で設定すること
  */
 using UnityStandardAssets.CrossPlatformInput;
+using UnityEngine.UI;
 
 
 public class Common : MonoBehaviour {
@@ -63,7 +64,7 @@ public class Common : MonoBehaviour {
 	}
 	
 	public Vector3 GetRandomPositionOnLevel(){
-		return new Vector3(Random.Range(-levelSize, levelSize), 0, Random.Range(-levelSize, levelSize));
+		return new Vector3(Random.Range(0, levelSize), 0, Random.Range(0, levelSize));
 	}
 
 	/**
@@ -91,7 +92,15 @@ public class Common : MonoBehaviour {
 		}
 
 		// 向き
-		transform.Rotate(0, CrossPlatformInputManager.GetAxisRaw("Horizontal"), 0);
+		if (Application.platform == RuntimePlatform.Android) {
+			if (CrossPlatformInputManager.GetAxisRaw ("Horizontal") > 0) {
+				transform.Rotate (0, CrossPlatformInputManager.GetAxisRaw ("Horizontal") + 2, 0);
+			} else if (CrossPlatformInputManager.GetAxisRaw ("Horizontal") < 0) {
+				transform.Rotate (0, CrossPlatformInputManager.GetAxisRaw ("Horizontal") - 2, 0);
+			}
+		} else {
+			transform.Rotate(0, CrossPlatformInputManager.GetAxisRaw("Horizontal"), 0);
+		}
 
 		// 移動
 		moveDirection = new Vector3 (minusDirection * CrossPlatformInputManager.GetAxisRaw("Horizontal"), 0, minusDirection * CrossPlatformInputManager.GetAxisRaw("Vertical"));

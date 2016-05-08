@@ -14,11 +14,11 @@ public class TrainingScene : MonoBehaviour {
 	public Text timeUpText;
 	private float time = 120f;
 	private bool isStart = false;
-	// キャラクター
-	GameObject createdObj;
 
 	// Use this for initialization
 	void Start () {
+		QualitySettings.vSyncCount = 0; // VSyncをOFFにする
+		Application.targetFrameRate = 120; // ターゲットフレームレートを60に設定
 		init ();
 	}
 	
@@ -26,6 +26,7 @@ public class TrainingScene : MonoBehaviour {
 	void Update () {
 		if (isGameStop == false) {
 			countDownTimeUp ();
+			addEnemies();
 		}
 	}
 
@@ -38,6 +39,8 @@ public class TrainingScene : MonoBehaviour {
 
 		// 制限時間の初期化
 		timeUpText.text = ((int)time).ToString();
+		// AIに生成
+		createAIEnemies();
 		StartCoroutine(countdownCoroutine());
 	}
 
@@ -54,9 +57,9 @@ public class TrainingScene : MonoBehaviour {
 		GameObject prefab = (GameObject)Resources.Load (prefabName);
 		// プレハブからインスタンスを生成
 		if (myMonster.getName ().Equals ("crayslug")) {
-			createdObj = (GameObject)Instantiate (prefab, new Vector3 (0, -5, 0), Quaternion.Euler (0, 180, 0));
+			Instantiate (prefab, new Vector3 (0, -5, 0), Quaternion.Euler (0, 180, 0));
 		} else {
-			createdObj = (GameObject)Instantiate (prefab, new Vector3 (0, -5, 0), Quaternion.Euler (0, 0, 0));
+			Instantiate (prefab, new Vector3 (0, -5, 0), Quaternion.Euler (0, 0, 0));
 		}
 	}
 
@@ -105,10 +108,49 @@ public class TrainingScene : MonoBehaviour {
 				isGameStop = true;
 				CameraControl.isReady = false;
 				AttackButton.isReadyState = false;
-				//Destroy(createdObj);
 				_textCountdown.gameObject.SetActive(true);
 				_textCountdown.text = "TIME UP!!";
 			}
+		}
+	}
+
+	/**
+	 * 敵AIの生成
+	 */
+	void createAIEnemies ()
+	{
+		int count = Const.Const.charactors.Count;
+		int randomCount = Random.Range (0, count);
+		int i = 0;
+		GameObject chara = null;
+		string charaName = "";
+		foreach(var key in Const.Const.charactors.Keys) {
+			if (i == randomCount) {
+				chara = (GameObject)Resources.Load (Const.Const.charactors[key]);
+				charaName = key;
+				break;
+			}
+			i++;
+		}
+		// 10匹生成
+		for (i = 0; i < 10; i++) {
+			GameObject enemy = (GameObject)Instantiate (chara, new Vector3(Random.Range (10, 400), -4, Random.Range (10, 400)), Quaternion.Euler(0, 180, 0));
+			enemy.tag = "enemy";
+			Common common = enemy.GetComponent<Common>();
+			common.isFarm = true;
+			common.speed = 10;
+			common.rotationSmooth = 20;
+			common.levelSize = 100;
+
+			i++;
+		}
+	}
+
+	void addEnemies ()
+	{
+		GameObject[] oldPrefab = GameObject.FindGameObjectsWithTag("enemy");
+		if (oldPrefab.Length < 5) {
+			createAIEnemies();
 		}
 	}
 }
