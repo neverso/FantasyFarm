@@ -9,8 +9,6 @@ Project("{DEF6D3D9-815A-2D06-EA2C-A4840BE2A514}") = "FantasyFarm", "Assembly-CSh
 EndProject
 Project("{DEF6D3D9-815A-2D06-EA2C-A4840BE2A514}") = "FantasyFarm", "Assembly-CSharp-Editor.csproj", "{60E4DB81-2D06-10D0-0192-88CF862B2E39}"
 EndProject
-Project("{DEF6D3D9-815A-2D06-EA2C-A4840BE2A514}") = "FantasyFarm", "Assembly-UnityScript.unityproj", "{5C27BD30-F6BF-C63D-8881-426C8E78145C}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,10 +31,6 @@ Global
 		{60E4DB81-2D06-10D0-0192-88CF862B2E39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60E4DB81-2D06-10D0-0192-88CF862B2E39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60E4DB81-2D06-10D0-0192-88CF862B2E39}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5C27BD30-F6BF-C63D-8881-426C8E78145C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5C27BD30-F6BF-C63D-8881-426C8E78145C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5C27BD30-F6BF-C63D-8881-426C8E78145C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5C27BD30-F6BF-C63D-8881-426C8E78145C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,5 +54,4 @@ Global
 		$3.inheritsScope = text/plain
 		$3.scope = text/plain
 	EndGlobalSection
-
 EndGlobal
