@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class BirthScene : MonoBehaviour {
 
@@ -30,13 +31,13 @@ public class BirthScene : MonoBehaviour {
 		GameObject prefab = (GameObject)Resources.Load ("prefabs/BirthAction");
 		Instantiate (prefab);
 		// キャラクター誕生
-		int count = Const.Const.charactors.Count;
-		int randomCount = Random.Range (0, count);
+		// TODO 試験
+		int birthMonsterIndex = 6; //PlayerPrefs.GetInt (Const.Const.birthMonsterID);
 		int i = 0;
 		GameObject chara = null;
 		string charaName = "";
 		foreach(var key in Const.Const.charactors.Keys) {
-			if (i == randomCount) {
+			if (i == birthMonsterIndex) {
 				chara = (GameObject)Resources.Load (Const.Const.charactors[key]);
 				charaName = key;
 				break;
@@ -62,19 +63,35 @@ public class BirthScene : MonoBehaviour {
 
 	// MyMonsterに登録
 	public void registAndMoveFarm() {
-		// TODO
-		// 1. 6匹を超えていた場合の挙動
-		// 2. ニックネームが登録ずみだった場合のアラート
-		// 3. ステータスへのinsert
-/*		Text  inputNickName = GameObject.Find("MonsterNickName").GetComponent<Text>();
-		if (checkAlreadyNickName (inputNickName.text) == false) {
-			Debug.Log("error: 登録済み -> " + inputNickName.text);
-			return;
-		}
+		Text  inputNickName = GameObject.Find("MonsterNickName").GetComponent<Text>();
 		Text  hiddenMonsterName = GameObject.Find("HiddenMonsterName").GetComponent<Text>();
 		Text  hiddenMonsterType = GameObject.Find("HiddenMonsterType").GetComponent<Text>();
+		if (checkAlreadyNickName (inputNickName.text) == false) {
+			string errorMsg = "この名前は登録済みです。";
+			if (checkHasMonsterType (hiddenMonsterType.text) == false) {
+				errorMsg = "このモンスターはすでに所有しています。";
+			}
+			if (checkMyMonsterCount() == false) {
+				errorMsg = "モンスターがいっぱいです。";
+			}
+			Debug.Log(errorMsg);
+			AndroidJavaClass unity = new AndroidJavaClass ("com.unity3d.player.UnityPlayer");
+			AndroidJavaObject activity = unity.GetStatic<AndroidJavaObject> ("currentActivity");
+			activity.Call ("runOnUiThread", new AndroidJavaRunnable (() => {
+				AndroidJavaObject alertDialogBuilder = new AndroidJavaObject ("android.app.AlertDialog$Builder", activity);
+				alertDialogBuilder.Call<AndroidJavaObject> ("setMessage", errorMsg);
+				alertDialogBuilder.Call<AndroidJavaObject> ("setCancelable", true);
+				alertDialogBuilder.Call<AndroidJavaObject> ("setPositiveButton", "OK", null);
+				AndroidJavaObject dialog = alertDialogBuilder.Call<AndroidJavaObject> ("create");
+				dialog.Call ("show");
+			}));
+			return;
+		}
+		// MyMonsterに登録
 		new Database.MyMonsterTable ().registMyMonster (inputNickName.text, hiddenMonsterName.text, int.Parse(hiddenMonsterType.text));
-*/
+		// MonsterにMyMonsterフラグを登録
+		new Database.MonstersTable ().updateMyMonsterFlg (int.Parse(hiddenMonsterType.text), 1);
+
 		// Scene移動
 		new SceneManager ().startGame ();
 	}
@@ -87,6 +104,29 @@ public class BirthScene : MonoBehaviour {
 		bool ret = false;
 		Entity.MyMonster entity = new Database.MyMonsterTable ().selectMyMosterByNickName (dispName);
 		if (entity == null) {
+			ret = true;
+		}
+		return ret;
+	}
+
+	/**
+	 * MyMonsterにすでに登録済みのtypeかどうかをチェックする
+	 */
+	private bool checkHasMonsterType(string type)
+	{
+		bool ret = false;
+		Entity.MyMonster entity = new Database.MyMonsterTable ().selectMyMosterByType (type);
+		if (entity == null) {
+			ret = true;
+		}
+		return ret;
+	}
+
+	private bool checkMyMonsterCount()
+	{
+		bool ret = false;
+		List<Entity.MyMonster> entities = new Database.MyMonsterTable ().selectMyMosters();
+		if (entities.Count < 6) {
 			ret = true;
 		}
 		return ret;

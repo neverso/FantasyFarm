@@ -8,7 +8,9 @@
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/UnityEngine.UI.dll
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/GETween.dll
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/GUIAnimatorFREE.dll
+/Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/Photon3Unity3D.dll
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/zxing.dll
+/Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/websocket-sharp.dll
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/Mono.Cecil.dll
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/Unity.SerializationLogic.dll
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/Unity.DataContract.dll

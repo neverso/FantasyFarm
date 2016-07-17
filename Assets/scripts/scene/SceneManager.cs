@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SceneManager : MonoBehaviour {
+public class SceneManager : Photon.MonoBehaviour {
 
 	public void Start(){
 	}
@@ -27,4 +27,10 @@ public class SceneManager : MonoBehaviour {
 	public void showTrainingScene() {
 		Application.LoadLevel ("training");
 	}
+	// バトル画面に遷移
+	public void showBattleScene() {
+		PhotonNetwork.Disconnect ();
+		Application.LoadLevel ("battle");
+	}
+
 }

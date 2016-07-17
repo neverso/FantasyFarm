@@ -52,6 +52,28 @@ namespace Database
 			}
 			return entity;
 		}
+
+		/**
+		 * Monsterテーブルに所有済みの値をセットする
+		 */
+		public void updateMyMonsterFlg(int type, int value)
+		{
+			string query = "update Monsters set isMine = '" + value + "'" + " where type = '" + type + "'";
+			sqlDB.ExecuteNonQuery(query);
+		}
+
+		// typeに一致するモンスターを取得する
+		public Entity.Monsters selectMosterByType(int type) {
+			// Select
+			string selectQuery = "select * from Monsters where type = " + "'" + type + "'";
+			DataTable dataTable = sqlDB.ExecuteQuery(selectQuery);
+			Entity.Monsters entity = null;
+			foreach(DataRow dr in dataTable.Rows){
+				entity = new Entity.Monsters((int)dr["id"], (string)dr["name"], (string)dr["dispname"], (string)dr["description"], (int)dr["isMine"]);
+				break;
+			}
+			return entity;
+		}
 	}
 }
 

@@ -7,7 +7,9 @@ public class Daruman : Common {
 		if (isFarm) {
 			moveRandom ();
 		} else if (isBook) {
-			rotateMonster();
+			rotateMonster ();
+		} else if (isBattle) {
+			moveBattle ();
 		} else {
 			moveTraining();
 		}

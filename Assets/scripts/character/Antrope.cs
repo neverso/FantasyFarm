@@ -7,7 +7,9 @@ public class Antrope : Common {
 		if (isFarm) {
 			moveRandom ();
 		} else if (isBook) {
-			rotateMonster();
+			rotateMonster ();
+		} else if (isBattle) {
+			moveBattle ();
 		} else {
 			moveTraining();
 		}

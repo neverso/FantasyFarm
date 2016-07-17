@@ -17,6 +17,7 @@ namespace Const
 		public static readonly Dictionary<string, string> charactorNames = new Dictionary<string, string>();
 		public static readonly Dictionary<string, int> monsterTypes = new Dictionary<string, int>();
 		public static readonly string nowMyMonsterID = "mymonster_id";
+		public static readonly string birthMonsterID = "birth_monster_id"; // UnityAdd.csで使用
 
 
 		static Const() {

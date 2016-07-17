@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using Const;
+using System.Collections.Generic;
 
 public class FarmScene : MonoBehaviour {
 	// モンスター表示名
@@ -15,6 +16,16 @@ public class FarmScene : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		// TODO 試験データ
+//		PlayerPrefs.SetInt (Const.Const.nowMyMonsterID, 1);
+//		new Database.MyMonsterTable().deleteAll();
+//		new Database.MyMonsterTable().registMyMonster("だるまん", "daruman", 1);
+//		new Database.MyMonsterTable().registMyMonster("あり", "antrope", 2);
+//		new Database.MyMonsterTable().registMyMonster("ドラえもん", "aodanuki", 3);
+//		new Database.MyMonsterTable().registMyMonster("ナメクジ", "crayslug", 4);
+//		new Database.MyMonsterTable().registMyMonster("ゴーレム", "goalem", 5);
+//		new Database.MyMonsterTable().registMyMonster("ゴースト", "goast", 7);
+
 		init ();
 		dispFarmMonster (getMyMonstername());
 	}
@@ -46,5 +57,15 @@ public class FarmScene : MonoBehaviour {
 		// プレハブからインスタンスを生成
 		GameObject createdObj = (GameObject)Instantiate (prefab, new Vector3(0, 0, 0), Quaternion.Euler(0, 180, 0));
 		createdObj.GetComponent<Common>().isFarm = true;
+	}
+
+	private int selectFirstMyMonsterId()
+	{
+		int id = 0;
+		List<Entity.MyMonster> entities = new Database.MyMonsterTable ().selectMyMosters ();
+		if (entities != null) {
+			id = entities[0].getType ();
+		}
+		return id;
 	}
 }

@@ -58,7 +58,7 @@ public class MyMosnsterText : MonoBehaviour {
 			return;
 		}
 		// ユーザーがクリックしたモンスターのtypeをPlayersPrefに保存し、FarmSceneを再度ロードする。
-		PlayerPrefs.SetInt (Const.Const.nowMyMonsterID, entity.getId());
+		PlayerPrefs.SetInt (Const.Const.nowMyMonsterID, entity.getType());
 		new SceneManager ().startGame ();
 	}
 

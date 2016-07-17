@@ -14,7 +14,10 @@
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/UnityEditor.TreeEditor.dll
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/GETween.dll
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/GUIAnimatorFREE.dll
+/Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/Newtonsoft.Json.dll
+/Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/Photon3Unity3D.dll
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/zxing.dll
+/Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/websocket-sharp.dll
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/UnityEditor.Graphs.dll
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/UnityEditor.Android.Extensions.dll
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/UnityEditor.iOS.Extensions.dll

@@ -1,7 +1,3 @@
-/Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/Assembly-CSharp-Editor.dll.mdb
-/Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/Assembly-CSharp-Editor.dll
-/Users/eguchiyu/Documents/unity/FantasyFarm/obj/Debug/Assembly-CSharp-Editor.dll
-/Users/eguchiyu/Documents/unity/FantasyFarm/obj/Debug/Assembly-CSharp-Editor.dll.mdb
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/UnityEngine.dll
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/UnityEditor.dll
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/Assembly-UnityScript.dll
@@ -15,7 +11,10 @@
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/UnityEditor.TreeEditor.dll
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/GETween.dll
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/GUIAnimatorFREE.dll
+/Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/Newtonsoft.Json.dll
+/Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/Photon3Unity3D.dll
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/zxing.dll
+/Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/websocket-sharp.dll
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/UnityEditor.Graphs.dll
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/UnityEditor.Android.Extensions.dll
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/UnityEditor.iOS.Extensions.dll
@@ -25,8 +24,6 @@
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/UnityEditor.iOS.Extensions.Common.dll
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/Assembly-CSharp-firstpass.dll
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/Assembly-CSharp-firstpass.dll.mdb
-/Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/Assembly-CSharp.dll
-/Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/Assembly-CSharp.dll.mdb
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/Assembly-CSharp-Editor-firstpass.dll
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/Assembly-CSharp-Editor-firstpass.dll.mdb
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/Mono.Cecil.dll

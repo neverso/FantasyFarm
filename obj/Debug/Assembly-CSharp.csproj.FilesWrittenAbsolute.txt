@@ -1,10 +1,13 @@
+/Users/eguchiyu/Documents/unity/FantasyFarm/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/UnityEngine.dll
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/UnityEditor.dll
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/UnityEngine.Networking.dll
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/UnityEngine.UI.dll
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/GETween.dll
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/GUIAnimatorFREE.dll
+/Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/Photon3Unity3D.dll
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/zxing.dll
+/Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/websocket-sharp.dll
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/Assembly-CSharp-firstpass.dll
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/Assembly-CSharp-firstpass.dll.mdb
 /Users/eguchiyu/Documents/unity/FantasyFarm/Temp/bin/Debug/Mono.Cecil.dll

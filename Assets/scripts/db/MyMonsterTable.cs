@@ -10,6 +10,7 @@
 using System;
 using Entity;
 using System.Collections.Generic;
+using UnityEngine;
 
 
 namespace Database
@@ -38,12 +39,13 @@ namespace Database
 		 */
 		public Entity.MyMonster selectMyMoster(int id) {
 			// Select
-			string selectQuery = "select * from MyMonster where id = " + id;
+			string selectQuery = "select * from MyMonster where type = " + id;
 			DataTable dataTable = sqlDB.ExecuteQuery(selectQuery);
 			Entity.MyMonster entity = null;
 			foreach(DataRow dr in dataTable.Rows){
 				entity = new Entity.MyMonster((int)dr["id"], (string)dr["name"], (string)dr["dispname"], (int)dr["old"], (int)dr["type"]);
 			}
+			Debug.Log (entity.getDispname());
 			return entity;
 		}
 		/**
@@ -88,6 +90,20 @@ namespace Database
 		{
 			// Select
 			string selectQuery = "select * from MyMonster where dispname = '" + dispName + "'";
+			DataTable dataTable = sqlDB.ExecuteQuery(selectQuery);
+			Entity.MyMonster entity = null;
+			if (dataTable.Rows != null) {
+				foreach(DataRow dr in dataTable.Rows){
+					entity = new Entity.MyMonster((int)dr["id"], (string)dr["name"], (string)dr["dispname"], (int)dr["old"], (int)dr["type"]);
+				}
+			}
+			return entity;
+		}
+
+		public Entity.MyMonster selectMyMosterByType(string type)
+		{
+			// Select
+			string selectQuery = "select * from MyMonster where type = '" + type + "'";
 			DataTable dataTable = sqlDB.ExecuteQuery(selectQuery);
 			Entity.MyMonster entity = null;
 			if (dataTable.Rows != null) {

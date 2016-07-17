@@ -27,7 +27,7 @@ namespace Database
 		 */
 		public Entity.Status selectStatusByID(int id) {
 			// Select
-			string selectQuery = "select * from Status where id = " + id;
+			string selectQuery = "select * from Status where type = " + id;
 			DataTable dataTable = sqlDB.ExecuteQuery(selectQuery);
 			Entity.Status entity = null;
 			foreach(DataRow dr in dataTable.Rows){
