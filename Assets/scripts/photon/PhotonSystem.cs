@@ -76,7 +76,6 @@ public class PhotonSystem : Photon.PunBehaviour {
 	Entity.Monsters getMyMonstername ()
 	{
 		Database.MonstersTable mt = new Database.MonstersTable ();
-		//		Entity.MyMonster entity = mmt.selectMyMoster (PlayerPrefs.GetInt(Const.Const.nowMyMonsterID, 1));
 		Entity.Monsters entity = mt.selectMosterByType (Random.Range (1, Const.Const.charactors.Count));
 		return entity;
 	}

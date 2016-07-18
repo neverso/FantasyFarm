@@ -166,6 +166,7 @@
      <Compile Include="Assets\TouchManager\Scripts\Events\CustomInputEventArgs.cs" />
      <Compile Include="Assets\TouchManager\Scripts\Events\FlickEventArgs.cs" />
      <Compile Include="Assets\TouchManager\Scripts\TouchManager.cs" />
+     <Compile Include="Assets\scripts\character\Alex.cs" />
      <Compile Include="Assets\scripts\character\Antrope.cs" />
      <Compile Include="Assets\scripts\character\Aodanuki.cs" />
      <Compile Include="Assets\scripts\character\Common.cs" />

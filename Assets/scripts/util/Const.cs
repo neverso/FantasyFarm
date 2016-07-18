@@ -29,6 +29,7 @@ namespace Const
 			charactors.Add ("goalem", "prefabs/goalem");
 			charactors.Add ("kaoari", "prefabs/kaoari");
 			charactors.Add ("goast", "prefabs/goast");
+			charactors.Add ("alex", "prefabs/alex");
 
 			// 日本語 <-> 識別子
 			charactorNames.Add ("だるまん", "daruman");
@@ -47,6 +48,7 @@ namespace Const
 			monsterTypes.Add ("goalem", 5);
 			monsterTypes.Add ("kaoari", 6);
 			monsterTypes.Add ("goast", 7);
+			monsterTypes.Add ("alex", 8);
 		}
 	}
 }

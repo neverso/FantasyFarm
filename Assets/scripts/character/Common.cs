@@ -214,8 +214,6 @@ public class Common : Photon.MonoBehaviour {
 	// 衝突があったさいに呼ばれる
 	void OnControllerColliderHit(ControllerColliderHit hit)
 	{
-		if (photonView.isMine) {
-		}
 		if (hit.gameObject.name.Equals("gameover-plane")) {
 			life = 0;
 			lifeBar.value = 0;
